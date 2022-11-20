@@ -11,7 +11,7 @@ project_config: {
     outdir: out/,
     logs: logs/,
     code: code/,
-    docs: docs/,
+    pages: pages/,
     bin: bin/,
     utils: utils/,
     tmp_dir:  /vast/scratch/users/vespasiani.d/

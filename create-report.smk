@@ -13,7 +13,7 @@ configfile: "config/project_config.yaml"
 project_config = config['project_config']
 project_name = project_config['project']
 code_dir = project_config['code']
-docs_dir = project_config['docs']
+pages_dir = project_config['pages']
 bin_dir = project_config['bin']
 logs_dir = project_config['logs']
 
@@ -32,18 +32,18 @@ rule all:
     input:
         ## Convert R scripts to md
         expand(code_dir + "{rscripts}.R", rscripts = rscripts),
-        expand(docs_dir + "{rscripts}.md", rscripts = rscripts),
+        expand(pages_dir + "{rscripts}.md", rscripts = rscripts),
 
         ## Convert Python scripts to md
         expand(code_dir + "{pyscripts}.py", pyscripts = pyscripts),
-        expand(docs_dir + "{pyscripts}.md", pyscripts = pyscripts),
+        expand(pages_dir + "{pyscripts}.md", pyscripts = pyscripts),
 
 
 rule R2md:
     input:
         code_dir + "{rscripts}.R"
     output:
-        docs_dir + "{rscripts}.md"
+        pages_dir + "{rscripts}.md"
     log:
         logs_dir + 'R2md/' + "{rscripts}-md-conversion.log"
     script:
@@ -54,7 +54,7 @@ rule py2Rmd:
     input:
         code_dir + "{pyscripts}.py"
     output:
-        temp(docs_dir + "{pyscripts}.Rmd")
+        temp(pages_dir + "{pyscripts}.Rmd")
     log:
         logs_dir + 'py2md/' + "{pyscripts}-Rmd-conversion.log"
     shell:
@@ -64,7 +64,7 @@ rule Rmd2md:
     input:
         rules.py2Rmd.output
     output:
-        docs_dir + "{pyscripts}.md"
+        pages_dir + "{pyscripts}.md"
     log:
         logs_dir + 'py2md/' + "{pyscripts}-md-conversion.log"
     script:

@@ -21,14 +21,14 @@ echo "Converting the $inputpy Python script into Rmd file format and writing it 
 
 # setup outfile
 touch $outputRmd
-script_name=$(basename "${outputRmd%.*}")
+# script_name=$(basename "${outputRmd%.*}")
 
-printf "
----
-title: $script_name
-output: md_document
----
-" >> $outputRmd
+# printf "
+# ---
+# title: $script_name
+# output: md_document
+# ---
+# " >> $outputRmd
 
 uninit=true
 chunk=
