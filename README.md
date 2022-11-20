@@ -1,6 +1,7 @@
 # Project template
----
+
 # Table of Contents
+- [Project template](#project-template)
 - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Content](#content)
