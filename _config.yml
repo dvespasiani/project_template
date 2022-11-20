@@ -24,6 +24,7 @@ navbar-links:
   Analyses:
     - Analysis1: "pages/analysis1"
     - Analysis2: "pages/analysis2"
+    - Analysis3: "pages/analysis3"
   Further info:
     - Contributions: "https://beautifuljekyll.com"
     - Fundings: "https://www.markdowntutorial.com/"
