@@ -62,9 +62,10 @@ Now you should be all set to start developing your scripts.
 To allow for an automatic conversion of any raw python and/or R scripts into Markdown (md), you'll need to remember to use a slightly different syntax. For a detailed explanation on how to write your code you can check:
 * [this post](https://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/)
 * [this page of the Rmarkdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html)
+  
 which will show you what to include in your R scripts in order to automatically include chunks, text and comments. Basically:
-1. Any line starting with #+ will be interpreted as a knitr chunk header
-2. Any line starting with #' will be rendered as markdown text
+1. Any line starting with `#+` will be interpreted as a knitr chunk header
+2. Any line starting with `#'` will be rendered as markdown text
    
 ---
 ## Report generation
@@ -72,7 +73,6 @@ which will show you what to include in your R scripts in order to automatically 
 Once you are happy with all your analyses and you want to just convert all your scripts into Markdown files, you will have to go to your project home directory and run the following:
 ```
 snakemake --cores 1 -s create-report.smk
-
 ```
 This will start a [snakemake workflow](https://snakemake.readthedocs.io/en/stable/) process that will read all files in the `code/` directory and use the scripts located in the `bin/` direcrtory to convert them into the markdown format. The newly generated markdown files will be located in the `pages/` directory.
 
