@@ -61,4 +61,3 @@ Here's a (non-comprehensive) list of things **I still need to fix**:
 Here's a (non-comprehensive) list of things **I still need to do**:
 * Adding commands to launch `sbatch` scripts 
 * Improving layout final website
-* Improve this README
