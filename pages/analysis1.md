@@ -1,5 +1,5 @@
 ---
-title: test
+title: analysis1
 output: 
   md_document:
         toc: true
@@ -11,7 +11,6 @@ Note that if you go down this path, you'd need to use a slightly different synta
 I intended to create this template in order to speed up report generation and code development at the same time 
 without the need of having to manually copy your R scripts into an Rmd file at the end.
 In this way, and by using the set of executable commands (see repo README) you should be able to automatically convert everything all at once <br/>
-
 
 
 ### First chunk: show some data
