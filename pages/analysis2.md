@@ -1,7 +1,9 @@
 
 ---
 title: analysis2
-output: md_document
+output: md_document 
+toc: true
+number_sections: true
 ---
 ## 1. Outline analysis 2
 This document contains instead an example on how to set up a python script and the use `knitr::spin()` for converting it into an Rmd file. <br/>
