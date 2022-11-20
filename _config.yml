@@ -21,9 +21,12 @@ author: Davide Vespasiani
 
 navbar-links:
   Description: "description"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Analyses:
+    - Analysis1: "pages/analysis1"
+    - Analysis2: "pages/analysis2"
+  Further info:
+    - Contributions: "https://beautifuljekyll.com"
+    - Fundings: "https://www.markdowntutorial.com/"
   # Author's home: "https://deanattali.com"
 
 ################
@@ -56,7 +59,7 @@ social-network-links:
   twitter: DVespasiani
   ORCID: 0000-0002-0977-8076
   linkedin: davide-vespasiani-415416140
-  google-scholar: https://scholar.google.com.au/citations?user=DqZbenIAAAAJ&hl=en
+  google-scholar: Davide Vespasiani
   # patreon: DeanAttali
   # youtube: c/daattali
 #  medium: yourname
