@@ -20,11 +20,11 @@ author: Davide Vespasiani
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  Description: "description"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  # Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -54,6 +54,9 @@ social-network-links:
   facebook: deanattali
   github: dvespasiani
   twitter: DVespasiani
+  ORCID: 0000-0002-0977-8076
+  linkedin: davide-vespasiani-415416140
+  google-scholar: https://scholar.google.com.au/citations?user=DqZbenIAAAAJ&hl=en
   # patreon: DeanAttali
   # youtube: c/daattali
 #  medium: yourname
@@ -79,7 +82,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -89,6 +92,7 @@ rss-description: This website is a virtual proof that I'm awesome
 share-links-active:
   twitter: true
   facebook: true
+  github: true
   linkedin: true
   vk: false
 
@@ -247,7 +251,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Australia/Melbourne"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
